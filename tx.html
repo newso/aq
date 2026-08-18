@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>联系人</title>
+    <script  language="JavaScript">
+    	var password="";
+    		password=prompt('请输入密码 (本网站需输入密码才可进入):','');
+    		if (password != '956')   {
+    			alert("密码不正确,无法进入本站!!");    
+    			window.opener=null; 
+    			window.stop();
+   			}
+  	</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;min-height:100vh;display:flex;justify-content:center;padding:20px}
+.container{max-width:420px;width:100%}
+.header{text-align:center;padding:30px 0 20px}
+.header h1{font-size:24px;font-weight:600;color:#1a1a2e}
+.header p{font-size:14px;color:#888;margin-top:6px}
+.search-box{background:#fff;border-radius:12px;padding:12px 16px;margin-bottom:16px;display:flex;align-items:center;box-shadow:0 2px 8px rgba(0,0,0,0.04)}
+.search-box span{font-size:18px;margin-right:10px;color:#999}
+.search-box input{flex:1;border:none;outline:none;font-size:15px;color:#333;background:transparent}
+.search-box input::placeholder{color:#bbb}
+.section-title{font-size:13px;color:#999;padding:10px 4px 6px;font-weight:500}
+.card{background:#fff;border-radius:14px;padding:14px 16px;margin-bottom:10px;display:flex;align-items:center;box-shadow:0 2px 8px rgba(0,0,0,0.04);cursor:pointer;text-decoration:none;color:inherit;transition:transform .15s}
+.card:active{transform:scale(0.98)}
+.avatar{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:600;color:#fff;flex-shrink:0;margin-right:14px}
+.info{flex:1;min-width:0}
+.info .name{font-size:16px;font-weight:500;color:#1a1a2e}
+.info .relation{font-size:13px;color:#999;margin-top:2px}
+.phone{font-size:14px;color:#4a90d9;font-weight:500;flex-shrink:0;margin-left:10px}
+.icon{width:36px;height:36px;border-radius:50%;background:#e8f0fe;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;margin-left:10px}
+.footer{text-align:center;padding:20px 0 30px;font-size:12px;color:#ccc}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header"><h1>📇 联系人</h1><p>共 6 位联系人</p></div>
+<div class="search-box"><span>🔍</span><input type="text" placeholder="搜索姓名或号码..."></div>
+<div class="section-title">★ 常用联系人</div>
+<a class="card" href="tel:13800138000"><div class="avatar" style="background:#4a90d9">张</div><div class="info"><div class="name">张建国</div><div class="relation">父亲</div></div><div class="phone">178 7173 3237</div><div class="icon">📞</div></a>
+<a class="card" href="tel:13900139000"><div class="avatar" style="background:#e67e22">李</div><div class="info"><div class="name">李秀英</div><div class="relation">母亲</div></div><div class="phone">159 7240 7110</div><div class="icon">📞</div></a>
+<a class="card" href="tel:13600136000"><div class="avatar" style="background:#9b59b6">王</div><div class="info"><div class="name">王大明</div><div class="relation">配偶</div></div><div class="phone">191 9539 9328</div><div class="icon">📞</div></a>
+<div class="section-title">其他联系人</div>
+<a class="card" href="tel:13700137000"><div class="avatar" style="background:#2ecc71">赵</div><div class="info"><div class="name">赵小玲</div><div class="relation">好友</div></div><div class="phone">137 0013 7000</div><div class="icon">📞</div></a>
+<a class="card" href="tel:13500135000"><div class="avatar" style="background:#e74c3c">陈</div><div class="info"><div class="name">陈医生</div><div class="relation">家庭医生</div></div><div class="phone">135 0013 5000</div><div class="icon">📞</div></a>
+<a class="card" href="tel:18800188000"><div class="avatar" style="background:#1abc9c">刘</div><div class="info"><div class="name">刘经理</div><div class="relation">同事</div></div><div class="phone">188 0018 8000</div><div class="icon">📞</div></a>
+<div class="footer">点击联系人卡片即可拨打电话</div>
+</div>
+</body>
+</html>
